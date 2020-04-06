@@ -1,49 +1,9 @@
-//Business Logic for Address Book ----------------
-function AddressBook(){
-  this.contacts = [];
-  this.currentID=0;
+function Place(country,city,timeOfYear,notes,landmarks){
+  this.country = country;
+  this.city = city;
+  this.timeOfYear = timeOfYear;
+  this.notes = notes;
+  this.landmarks = landmarks; 
 }
 
-AddressBook.prototype.addContact = function(contact){
-  contact.id=this.assignID();
-  this.contacts.push(contact);
-}
-AddressBook.prototype.assignID=function(){
-  this.currentID += 1;
-  return this.currentID;
-}
-
-AddressBook.prototype.findContact = function(id){
-  for (var i=0; i<this.contacts.length; i++){
-    if (this.contacts[i]){
-      if (this.contacts[i].id === id) {
-        return this.contacts[i];
-      }
-    }
-  };
-  return false;
-}
-
-AddressBook.prototype.deleteContact = function(id){
-  for (var i=0; i<this.contacts[i].id ===id){
-    if(this.contacts[i]){
-      if (this.contacts[i].id===id){
-        delete this.contacts[i];
-        return this.contacts[i];
-      }
-    }
-  };
-return false;
-}
-
-
-//Business Logic for Contacts -------------------
-function Contact(firstName,lastName,phoneNumber){
-  this.firstName =firstName;
-  this.lastName =lastName;
-  this.phoneNumber=phoneNumber;
-}
-
-Contact.prototype.fullName=function(){
-  return this.firstName + ' ' +this.lastName;
-}
+var place1 = new Place('italy', 'bergamo', 'winter', 'off the radar, low-key classic northern Italy','citta alta');
