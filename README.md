@@ -1,9 +1,9 @@
-# Address Book
+# Places I've Been
 
 ###### created by **Ryan Duff**
 ---
 ## Purpose
-###### This project is intended to increase my knowledge of and comfortability with creating and manipulating Javascript objects.
+###### This project is intended to increase my knowledge of and comfortability with creating and manipulating Javascript objects. It will host a cataloge if information to places I've travelled to.
 ### Specs
 | Spec | Input | Output |
 |:-|:-|:-|
